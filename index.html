@@ -1,5 +1,35 @@
 <html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js" defer></script>
+  </head>
   <body>
-    <p>Hello World</p>
+    <center>
+      <div class="toptext">
+        <h1>Dragy Data Downloader</h1>
+        <h3>Use this tool to get detailed dragy data from your runs. Simply publish your runs to your account to be accessible!</h3>
+        <p class="note">Note: All code is public, no data saved, info is only sent directly to the dragy website.</p>
+      </div>
+      <br><br>
+      <div class="inputs">
+        <div class="item">
+          <label>Username/Email</label><br>
+          <input id="username" type="text" placeholder="youremail@gmail.com" />
+        </div>
+        <div class="item">
+          <label>Password</label><br>
+          <input id="password" type="password" placeholder="your password"/>
+        </div>
+        <div class="item">
+          <br>
+          <button onclick="getData()">Get Dragy Data!</button>
+        </div>
+        <div class="item">
+          <br><br>
+          <p id="loadingText" hidden>Fetching data...</p>
+          <p id="errorText" class="error" hidden>ERROR</p>
+        </div>
+      </div>
+    </center>
   </body>
 </html>
